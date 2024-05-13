@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="./todo.css" />
+    <!-- GOOGLE FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME ICON CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css.css"
+    />
+  </head>
+  <body>
+    <div class="design4"></div>
+    <i class="fa-solid fa-plus design1"></i>
+    <i class="fa-solid fa-code design2"></i>
+    <i class="fa-solid fa-pen design3"></i>
+    <main class="ccc">
+      <div class="container">
+        <nav>
+          <div class="name">
+            <i class="fa-regular fa-user"></i>
+            <p>HI, Elite</p>
+          </div>
+
+          <p id="time"></p>
+        </nav>
+
+        <div class="center">
+          <div class="inputs">
+            <input
+              type="text"
+              id="todo-title"
+              placeholder="Add your Todo"
+              autocomplete="off"
+            />
+            <div class="oth">
+              <input type="date" name="" id="dueDate" />
+
+              <button id="setTodo" onclick="addTodoToList()">Add</button>
+            </div>
+          </div>
+
+          <p
+            style="
+              text-align: center;
+              margin-top: 1em;
+              color: rgb(255, 255, 255);
+              display: none;
+              padding: 1em;
+            "
+            id="warn"
+          >
+            PLease INPUT a Text / Due Date
+          </p>
+
+          <div id="todo-cont"></div>
+        </div>
+
+        <a
+          href="./todo.htm"
+          onclick="localStorage.clear()"
+          style="
+            padding: 0.5em 1em;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 1em;
+          "
+          >Reset</a
+        >
+      </div>
+    </main>
+
+    <script src="./todo.js"></script>
+    <script
+      src="https://kit.fontawesome.com/19a24e5ad1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
